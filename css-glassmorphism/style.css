@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+  background-color: black;
+  color: white;
+  /* position: relative; */
+  height: 100vh;
+}
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c1,
+.c2,
+.c3,
+.c4 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+}
+
+.c1 {
+  background: radial-gradient(green, yellow);
+  left: 10px;
+  top: 10px;
+  border-radius: 50% 50%;
+}
+
+.c2 {
+  background: radial-gradient(blue, red);
+  bottom: 10px;
+  left: 10px;
+  height: 175px;
+  border-radius: 50% 50% 10% 20%;
+}
+
+.c3 {
+  background: radial-gradient(rgb(128, 0, 49), rgb(145, 255, 0));
+  right: 10px;
+  bottom: 10px;
+  border-radius: 30% 20% 60% 20%;
+}
+
+.c4 {
+  background: radial-gradient(rgb(128, 17, 0), rgb(150, 80, 28));
+  right: calc(50% - 350px);
+  top: calc(50% - 200px);
+  border-radius: 50% 50%;
+}
+
+.stack {
+  height: 150vh;
+  width: 150vw;
+  backdrop-filter: blur(20px);
+}
+
+.cc {
+  position: absolute;
+  height: 250px;
+  width: 450px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.239);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(128, 128, 128, 0.22);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.num {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-top: 5rem;
+}
+
+.details {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.top {
+  font-size: 0.75rem;
+}
+.btn {
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.details > div:last-child {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
