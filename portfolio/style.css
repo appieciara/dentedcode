@@ -1,0 +1,130 @@
+:root {
+  --color-orange: orangered;
+  --color-black: #2a2a2a;
+  --color-white: white;
+
+  --body-bg: rgb(187, 218, 236);
+  --text-color: var(--color-black);
+
+  --dark-bg: var(--color-black);
+  --dark-text-color: var(--color-white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* .joti-one-regular {
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+}
+
+/* dark Mode toggler */
+[for="darkMode"] {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+}
+
+[for="darkMode"]:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+#darkMode:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  color: var(--dark-text-color);
+}
+
+#darkMode {
+  display: none;
+}
+
+/* <!-- hero section --> */
+header {
+  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.574);
+  background-color: var(--body-bg);
+  position: sticky;
+  top: 0;
+}
+
+header .header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.line::before {
+  content: "";
+  background: var(--color-orange);
+  width: 4px;
+  height: 100%;
+
+  position: absolute;
+  left: 27%;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navigation li:hover {
+  color: var(--color-orangered);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* <!-- banner --> */
+
+/* <!-- skills --> */
+
+/* <!-- Projects --> */
+
+/* <!-- about  --> */
+
+/* <!-- Contact --> */

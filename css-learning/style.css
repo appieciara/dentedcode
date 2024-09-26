@@ -70,3 +70,21 @@ html {
 .em div {
   font-size: 2em;
 }
+
+.parent {
+  background-color: black;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-end; */
+}
+
+.parent div {
+  color: white;
+  background-color: green;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
