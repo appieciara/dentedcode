@@ -40,6 +40,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -47,6 +48,15 @@ body {
 .wrapper {
   background: var(--body-bg);
   min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  border-bottom: 2px solid var(--color-orange);
+  font-size: 2rem;
 }
 
 /* dark Mode toggler */
@@ -185,22 +195,22 @@ a {
   flex-wrap: wrap;
 }
 
-.icon-container{
-    background: var(--color-orange);
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    color: white;
+.icon-container {
+  background: var(--color-orange);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: white;
 }
-.info-content div span{
-    font-size: 1.2rem;
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
+.info-content div span {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
 }
 
-.info-content div p{
-    color: var(--color-orange);
+.info-content div p {
+  color: var(--color-orange);
 }
 
 .info-divider {
@@ -209,11 +219,55 @@ a {
   height: 7vh;
 }
 
-.
 /* <!-- skills --> */
+.skills {
+  margin-top: 3rem;
+}
 
+.skills-container {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-container > div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container > div i {
+  font-size: 3rem;
+}
 /* <!-- Projects --> */
+.projects {
+  margin-top: 5rem;
+}
 
+.project-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card {
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.project-card a {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
 /* <!-- about  --> */
 
 /* <!-- Contact --> */
+
+/* Footer */
+footer {
+  background: var(--color-black);
+  color: white;
+  margin-top: 2rem;
+  min-height: 30vh;
+}
