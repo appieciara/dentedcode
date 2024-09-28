@@ -289,8 +289,8 @@ a {
 
 .my-bio h2 {
   font-size: 2rem;
-  letter-spacing: 5px;
-  margin-bottom: 3rem;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
 }
 
 .my-bio p:nth-child(3),
@@ -368,8 +368,8 @@ footer .top {
 .goup-arrow {
   font-size: 3rem;
   background: var(--color-orange);
-  height: 9vh;
-  width: 4vw;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   position: fixed;
   right: 2rem;
@@ -378,6 +378,7 @@ footer .top {
 
 /* media query */
 @media (max-width: 768px) {
+  /* hamburgerMenu */
   [for="hamburgerMenu"] {
     display: block;
     cursor: pointer;
@@ -404,5 +405,37 @@ footer .top {
 
   #hamburgerMenu:checked + .menu {
     left: calc(100vw - 250px);
+  }
+
+  /* hero section */
+  .hero {
+    grid-template-areas: "right" "left";
+  }
+
+  .hero .right {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  /* banner */
+  .banner {
+    margin-top: 40rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14rem;
+  }
+  .info-divider {
+    display: none;
+  }
+
+  /* project  section */
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* about  */
+  .about-content {
+    flex-direction: column;
   }
 }
