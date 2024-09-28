@@ -40,20 +40,24 @@
             <div>Arjun</div>
             <div class="line">Fullstack developer</div>
           </div>
+          <label for="hamburgerMenu">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" id="hamburgerMenu" />
           <div class="menu">
             <ul class="navigation flex">
-              <li><a href="">HOME</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contacts</a></li>
+              <li><a href="#hero">HOME</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contacts</a></li>
             </ul>
           </div>
         </div>
       </header>
 
       <!-- Hero section -->
-      <section class="hero-section container">
+      <section class="hero-section container" id="hero">
         <div class="hero grid">
           <div class="left flex">
             <div>Hi, I am <span> Arjun Lama</span></div>
@@ -73,7 +77,7 @@
       </section>
 
       <!-- banner -->
-      <section class="banner flex container">
+      <section class="banner flex container" id="banner">
         <div class="info-content flex">
           <div class="icon-container flex flex-center">
             <i class="fa-solid fa-award"></i>
@@ -110,7 +114,7 @@
       </section>
 
       <!-- skills -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="title"><span>Skills</span></h2>
         <div class="skills-container flex container">
           <div>
@@ -143,8 +147,9 @@
           </div>
         </div>
       </section>
+
       <!-- Projects -->
-      <section class="projects container">
+      <section class="projects container" id="projects">
         <h2 class="title">
           <span>My Projects</span>
         </h2>
@@ -152,8 +157,10 @@
           <div class="project-card">
             <div class="top">
               <img src="./assets/projects.png" alt="" width="100%" />
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-chrome"></i></a>
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
             </div>
             <div class="bottom"></div>
             <h3>Project Name</h3>
@@ -162,8 +169,10 @@
           <div class="project-card">
             <div class="top">
               <img src="./assets/projects.png" alt="" width="100%" />
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-chrome"></i></a>
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
             </div>
             <div class="bottom"></div>
             <h3>Project Name</h3>
@@ -172,8 +181,10 @@
           <div class="project-card">
             <div class="top">
               <img src="./assets/projects.png" alt="" width="100%" />
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-chrome"></i></a>
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
             </div>
             <div class="bottom"></div>
             <h3>Project Name</h3>
@@ -182,8 +193,10 @@
           <div class="project-card">
             <div class="top">
               <img src="./assets/projects.png" alt="" width="100%" />
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-chrome"></i></a>
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
             </div>
             <div class="bottom"></div>
             <h3>Project Name</h3>
@@ -191,12 +204,95 @@
           </div>
         </div>
       </section>
+
       <!-- about  -->
+      <section class="about" id="about">
+        <h2 class="title">
+          <span>About Me</span>
+        </h2>
+        <div class="about-content container flex">
+          <div class="myImg">
+            <img src="./assets/arjun.png" alt="@Arjun" width="100%" />
+          </div>
+          <div class="my-bio">
+            <h2>Arjun Lama</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              voluptates quia fugit obcaecati voluptatem reiciendis esse nulla
+              dolore est eligendi eum tempora, sequi, excepturi reprehenderit
+              enim ab? Facere, possimus totam?
+            </p>
+            <p>Canberra, Australia</p>
+            <div>
+              <div class="tag">Interests</div>
+              <div class="flex">
+                <span>Coding</span>
+                <span>Football</span>
+                <span>Cricket</span>
+                <span>Movies</span>
+                <span>Books</span>
+                <span>Events</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Contact -->
+      <section class="contact container" id="contact">
+        <h2 class="title"><span>Contact</span></h2>
+        <div class="contact-details flex flex-center">
+          <div class="contact-icons flex">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-regular fa-mobile"></i></a>
+          </div>
+          <h3>OR</h3>
+          <div class="email">
+            <a href="" class="flex flex-center">
+              <span>youremail@gmail.com</span>
+              <div class="email-icon flex flex-center">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!-- Footer -->
-      <footer>&copy; All rights reserved.</footer>
+      <footer class="flex flex-center">
+        <div class="top flex">
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <h3>Social Links</h3>
+            <ul>
+              <li><a href=""></a>LinkedIn</li>
+              <li><a href=""></a>GitHub</li>
+              <li><a href=""></a>Facebook</li>
+              <li><a href=""></a>Youtbe</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          &copy; All rights reserved || Made by Arjun with Love.
+        </div>
+      </footer>
+
+      <!-- GoUP -->
+      <a href="#hero">
+        <div class="goup-arrow flex flex-center">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </a>
     </div>
   </body>
 </html>
